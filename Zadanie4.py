@@ -1,12 +1,12 @@
 cenaBenzyny = 6
 srednieSpalanie = 8
-val1 = int(input("Wprowadź cenę za przejazd: "))
-val2 = int(input("Wprowadź ilość kilometrów do przejechania: "))
+cenaZaPrzejazd = int(input("Wprowadź cenę za przejazd: "))
+dlugoscTrasy = int(input("Wprowadź ilość kilometrów do przejechania: "))
+cenaZa100km = 6*8
 
-tripCena = ((val2)/8)*cenaBenzyny
-print(tripCena)
+tripCena = ((dlugoscTrasy)/100*cenaZa100km)
 
-if tripCena > val1:
+if tripCena > cenaZaPrzejazd:
     print("Musisz zatankować po drodze")
 else:
     print("Spokojnie dojedziesz")
